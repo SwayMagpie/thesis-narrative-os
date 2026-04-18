@@ -1168,5 +1168,163 @@ World Consistency は OS のこの段階で導入される。
 OS の仕様書には含めない。
 
 
+# 08_narrative-rendering.md  
+Thesis-Narrative OS — Narrative Rendering Specification
+
+## 1. Narrative Rendering（物語レンダリング）の定義
+
+Narrative Rendering とは、  
+これまでに生成された以下の構造データを束ね、  
+**自然言語として出力する最終工程**である：
+
+- World Model（世界）  
+- Fact Log（外界の変化）  
+- Subjective Expression（内界の変化）  
+- Event Update（価値ベクトルの更新）  
+- Emotion Dynamics（情動）  
+- World Consistency（整合性）
+
+Narrative Rendering は「創作」ではなく、  
+**内部計算結果の自然言語化**である。
+
+---
+
+## 2. Narrative Rendering の役割
+
+Narrative Rendering は OS 内で以下の役割を担う：
+
+- **価値観の変遷ログを自然言語として可視化する**  
+- **Fact Log と Subjective Expression を統合して物語として提示する**  
+- **Event Update の連続を Narrative Trajectory として表現する**  
+- **Emotion Dynamics を読者が理解可能な形に変換する**
+
+Narrative Rendering の本質は：
+
+
+
+\[
+物語 = 価値観の変遷ログのレンダリング結果
+\]
+
+
+
+である。
+
+---
+
+## 3. Narrative Rendering の構造
+
+Narrative Rendering は以下の要素を統合する：
+
+### 3.1 External Layer（外界）  
+- Fact Log  
+- World Model  
+- World Consistency  
+
+### 3.2 Internal Layer（内界）  
+- Value Vector  
+- Subjective Expression  
+- Emotion Dynamics  
+
+### 3.3 Update Layer（更新）  
+- Event Update  
+- Narrative Trajectory（価値ベクトルの軌道）
+
+これらを束ねて自然言語として出力する。
+
+---
+
+## 4. Narrative Rendering の計算モデル
+
+Narrative Rendering は、  
+以下のような統合関数として定義される：
+
+
+
+\[
+Narrative = h(World, FactLog, SubjectiveExpression, Event, Emotion, Consistency)
+\]
+
+
+
+ここで重要なのは：
+
+- **Narrative は新しい情報を生成しない**  
+- **Narrative は既存の内部計算結果を自然言語に変換するだけ**
+
+という点である。
+
+---
+
+## 5. Narrative Rendering と LLM
+
+Narrative Rendering は、  
+**LLM に委譲可能な工程**である。
+
+理由：
+
+- ここまでの工程で必要なデータはすべて揃っている  
+- Narrative Rendering は「加工」であり「創作」ではない  
+- LLM は自然言語化に特化している  
+- OS の目的は「LLM に渡すための構造化データを作ること」
+
+そのため、  
+**OS の最終工程は LLM に任せる設計が自然**である。
+
+---
+
+## 6. Narrative Rendering の自由度
+
+Narrative Rendering は OS の外側にある  
+**創作者の自由領域**である。
+
+自由に決めてよいもの：
+
+- 文体  
+- 語り口  
+- 視点（1人称・3人称など）  
+- 時制  
+- 文学的表現  
+- 情緒的演出  
+- 物語のテンポ  
+- どこまで描写するか  
+
+OS が規定するのは **構造**であり、  
+**表現方法は創作者の自由**である。
+
+---
+
+## 7. Narrative Rendering の必要条件
+
+Narrative Rendering が成立するためには：
+
+- Fact Log と Subjective Expression が整合している  
+- Event Update が連続している  
+- Emotion Dynamics が反映されている  
+- World Consistency が保たれている  
+
+これらの条件が必要となる。
+
+これらが満たされない場合、  
+Narrative Rendering は破綻する。
+
+---
+
+## 8. 本章が提供しないもの（Non-Scope）
+
+本章は Narrative Rendering の **構造のみ** を扱う。  
+以下は対象外とする：
+
+- 文体の選び方  
+- 物語の書き方  
+- どのように読者を感動させるか  
+- どのように描写するか  
+- どのように語り口を選ぶか  
+- 創作者の価値観・判断基準  
+
+これらは創作者の内部モデルに依存するため、  
+OS の仕様書には含めない。
+
+
 
 
