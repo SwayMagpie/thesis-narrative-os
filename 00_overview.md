@@ -194,3 +194,15 @@ This enables a **simulation-capable narrative generation OS**.
 - subjective expression generation rules  
 - numerical implementation of the full model
 
+---
+
+## User Requirements
+
+Thesis‑Narrative OS is not a plug‑and‑play storytelling tool.  
+It requires users who can operate with abstract concepts such as value systems,  
+state transitions, emotional dynamics, and internal models.
+
+This OS is designed for creators who can think in structures,  
+not for those seeking templates or automated plot generators.
+
+
