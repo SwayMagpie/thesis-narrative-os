@@ -66,13 +66,13 @@ it cannot be exploited without understanding.
 ├── 01_thesis-model.md
 ├── 02_value-vector.md
 ├── 03_event-update.md
-├── 04_fact-log.md
-├── 05_subjective-expression.md
-├── 06_world-consistency.md
-├── 07_rendering.md
+├── 04_emotion-dynamics.md
+├── 05_fact-log.md
+├── 06_subjective-expression.md
+├── 07_world-consistency.md
+├── 08_rendering.md
 └── examples/
 ```
-
 
 ---
 
