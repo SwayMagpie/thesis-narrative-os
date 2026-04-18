@@ -782,4 +782,139 @@ Emotion Dynamics は、
 これらは創作者の内部モデルに依存するため、  
 OS の仕様書には含めない。
 
+# 05_fact-log.md  
+Thesis-Narrative OS — Fact Log Specification
+
+## 1. Fact Log（事実ログ）の定義
+
+Fact Log とは、  
+**外界における状態遷移を記録する構造データ**である。
+
+OS 内では、以下の 3 要素が明確に分離される：
+
+- **Fact Log（外界の変化）**  
+- **Subjective Expression（内界の変化）**  
+- **Event Update（外界と内界の交点）**
+
+Fact Log は「出来事の描写」ではなく、  
+**イベント成立に必要な外界の変化を構造的に記述したもの**である。
+
+---
+
+## 2. Fact Log の役割
+
+Fact Log は OS 内で以下の役割を担う：
+
+- **Event Update の外部側の根拠を提供する**  
+- **Value Vector の更新を外界の変化と整合させる**  
+- **World Consistency（世界整合性）を保証する**  
+- **マイルストーン間の“道中”を構造化する**
+
+Fact Log は、  
+**イベントを成立させるための外界の因果関係**を記述するための  
+最小限の構造である。
+
+---
+
+## 3. Fact Log と Event の関係
+
+OS 内では、以下の関係が成立する：
+
+- **Fact Log = 外界の変化**  
+- **Subjective Expression = 内界の変化**  
+- **Event = その交点（Value Vector Update）**
+
+イベントは Fact Log がなければ成立しない。  
+Fact Log はイベントの「外部側の証拠」である。
+
+---
+
+## 4. Fact Log の構造
+
+Fact Log は以下の要素で構成される：
+
+### 4.1 External State Before  
+イベント前の外界状態。
+
+### 4.2 External State After  
+イベント後の外界状態。
+
+### 4.3 State Transition  
+外界がどのように変化したかを示す差分。
+
+### 4.4 Causal Link  
+その外界変化が、  
+Value Vector の更新（ΔValueVector）と  
+整合するための因果的説明。
+
+Fact Log は「何が起きたか」ではなく、  
+**外界がどう変化したか**を記述する。
+
+---
+
+## 5. マイルストーン間の Fact Log
+
+イベント（マイルストーン）が決まったら、  
+**前回のイベントから今回のイベントに至るまでの外界の変化**を  
+Fact Log として書き出す。
+
+OS 的には：
+
+- マイルストーン（更新点）は構造的に決まる  
+- その間をどう繋ぐか（Fact Log）は自由  
+- ただし World Consistency を満たす必要がある
+
+Fact Log は **マイルストーン間の“道中”を構造化するデータ**である。
+
+---
+
+## 6. Fact Log と World Consistency
+
+Fact Log は World Consistency に強く依存する。
+
+World Consistency とは：
+
+- 外界の変化が矛盾していない  
+- 価値ベクトルの更新と整合している  
+- 主観表現と矛盾しない  
+- 物語世界のルールに反しない  
+
+Fact Log は、  
+**世界整合性を保ちながら Value Vector を更新するための  
+外界側の構造的要件**である。
+
+---
+
+## 7. Fact Log の設計難易度
+
+Fact Log の設計は OS 内で最もデリケートな工程のひとつである。
+
+理由：
+
+- ΔValueVector の大きさに応じて必要な外界変化が変わる  
+- EventIntensity と整合させる必要がある  
+- World Consistency を維持しなければならない  
+- 主観表現との整合も必要  
+
+OS としては構造だけ提供し、  
+**どの次元にどれだけの変化を置くかは創作者の判断**に委ねる。
+
+---
+
+## 8. 本章が提供しないもの（Non-Scope）
+
+本章は Fact Log の **構造のみ** を扱う。  
+以下は対象外とする：
+
+- どのような出来事を描くか  
+- どのように Fact Log を思いつくか  
+- どの程度の外界変化を設定するか  
+- 物語の演出方法  
+- 世界観の作り方  
+- 創作者の価値観・判断基準  
+
+これらは創作者の内部モデルに依存するため、  
+OS の仕様書には含めない。
+
+
 
