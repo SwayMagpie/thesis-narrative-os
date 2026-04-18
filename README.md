@@ -1,65 +1,92 @@
-# thesis-narrative-os
+# thesis-narrative-os  
+A thesis‑driven narrative generation OS.
 
-A thesis‑driven narrative generation OS.  
 This framework treats narrative as **state transitions of value systems**,  
-using a unified computational model:
+and generates natural‑language stories through a consistent computational pipeline:
 
-**Thesis → Value Vector → Event → Fact Log → Subjective Expression → Rendering**
+**Thesis → Value Vector → Event Update → Fact Log → Subjective Expression → World Consistency → Narrative Rendering**
 
----
-
-## Overview
-
-**thesis-narrative-os** reframes narrative creation not as “writing” but as  
-**rendering the log of value‑state transitions** within a consistent world model.
-
-This project defines narrative through the following components:
-
-- **Thesis**  
-  The core proposition of the story. Functions as the directional vector of value.
-
-- **Value Vector**  
-  A character’s internal state represented as weighted value dimensions.
-
-- **Event**  
-  A moment where the value vector updates.  
-  The point of maximum subjective-state delta.
-
-- **Fact Log**  
-  External state transitions required for an event to occur.
-
-- **Subjective Expression**  
-  Internal transitions produced by the interaction of  
-  **value vectors × fact logs**.
-
-- **World Consistency**  
-  The integration layer ensuring both internal and external states can coexist.
-
-- **Narrative Rendering**  
-  The final process that bundles all components into natural‑language output.
-
-This OS models narrative as  
-**the optimization and transformation of value functions over time**,  
-distinct from traditional plot‑ or character‑driven writing theories.
+It is not a “story template,”  
+but an **operating system for narrative generation**.
 
 ---
 
-## Why this exists
+# Overview
 
-Ideas accumulate.  
-Stories remain unwritten.  
-Writing is tedious, but structure is clear.
+thesis-narrative-os reframes narrative generation not as “creative writing,”  
+but as an **OS‑like process that renders logs of value‑state transitions**.
 
-This framework was created to provide  
-**the shortest possible path from concept to narrative**,  
-by treating story generation as an OS‑level process rather than a creative burden.
-
-The system is public because it requires genuine cognitive structure to use;  
-it cannot be exploited without understanding.
+The project defines narrative using the following structural components:
 
 ---
 
-## Repository Structure (planned)
+## 🧭 Thesis  
+The central proposition of the narrative.  
+A directional vector for the value function.
+
+## 🧩 Value Vector  
+A character’s internal state.  
+A weighted multidimensional vector of value dimensions.
+
+## ⚡ Event Update  
+The moment a Value Vector changes.  
+The point where internal and external differences peak.
+
+## 🌐 Fact Log  
+External state transitions.  
+Objective facts required for an Event Update to be valid.
+
+## 💭 Subjective Expression  
+Internal interpretation generated from  
+**Value Vector × Fact Log × Emotion Dynamics**.
+
+## 🌍 World Consistency  
+A world model in which both external (Fact Log)  
+and internal (Subjective Expression) states can coexist without contradiction.
+
+## 📝 Narrative Rendering  
+The final stage that integrates all components  
+and outputs natural‑language narrative.
+
+Narrative, in this OS, is simply:
+
+**“the rendered log of value‑state transitions.”**
+
+---
+
+# Why this exists
+
+Ideas multiply.  
+Writing is tedious.  
+The structure is understood, but the execution is slow.
+
+This OS was designed to solve that problem—  
+to generate stories in the shortest possible path  
+by delegating the rendering to an LLM.
+
+---
+
+# Philosophy
+
+Thesis‑Narrative OS is **not** a plug‑and‑play story template.
+
+It assumes the user can work with:
+
+- value dimensions  
+- state transitions  
+- emotional dynamics  
+- internal models  
+- world consistency  
+- vector updates  
+- structural events  
+
+It is an OS for people who think about narrative **structurally**,  
+and who want to **automate or outsource the writing process**.
+
+---
+
+# Repository Structure (planned)
+
 ```
 /thesis-narrative-os
 ├── 00_overview.md
@@ -70,26 +97,44 @@ it cannot be exploited without understanding.
 ├── 05_fact-log.md
 ├── 06_subjective-expression.md
 ├── 07_world-consistency.md
-├── 08_rendering.md
+├── 08_narrative-rendering.md
+├── 09_numeric-extension.md
 └── examples/
 ```
 
 ---
 
-## License
+# Future Extensions
 
-This project is released under the MIT License.  
+By numerically modeling the following:
+
+- Value Vectors  
+- Event update magnitudes  
+- Fact Log weights  
+- Emotional strength & purity  
+- Subjective Expression depth  
+
+the OS can evolve into a  
+**simulation‑capable narrative generation engine**  
+that mathematically guarantees narrative inevitability.
+
+This is optional and forward‑looking,  
+not part of the core OS.
+
+---
+
+# License
+
+Released under the MIT License.  
 Use it freely. Modify it freely. Break it freely.
 
 ---
 
-## Support
+# Support
 
 If this framework contributed to your thinking or work,  
-you can support the author through **GitHub Sponsors**.
+you can support the author through GitHub Sponsors.
 
-Sponsorship is optional and has no effect on access,  
+Sponsorship is optional and does not affect access,  
 features, or priority.  
-It is purely a token of appreciation.
-
-
+It is simply a token of appreciation.
