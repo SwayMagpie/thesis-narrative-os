@@ -917,4 +917,134 @@ OS としては構造だけ提供し、
 OS の仕様書には含めない。
 
 
+# 06_subjective-expression.md  
+Thesis-Narrative OS — Subjective Expression Specification
+
+## 1. Subjective Expression（主観表現）の定義
+
+Subjective Expression とは、  
+**キャラクターが世界をどのように経験したかを記録する  
+内界の状態遷移ログ**である。
+
+OS 内では、主観表現は以下の 3 要素の組み合わせによって生成される：
+
+- **Value Vector（価値観）**  
+- **Fact Log（外界の変化）**  
+- **Emotion Dynamics（情動）**
+
+主観表現は「キャラクターの感情」ではなく、  
+**内部計算の結果として得られる“経験のログ”**である。
+
+---
+
+## 2. 主観表現の役割
+
+Subjective Expression は OS 内で以下の役割を担う：
+
+- **イベントの内界側の根拠を提供する**  
+- **Value Vector の更新がどのように経験されたかを記述する**  
+- **Emotion Dynamics の出力を物語内部で解釈可能にする**  
+- **外界（Fact Log）と内界（Emotion）の橋渡しを行う**
+
+主観表現は、  
+**外界の変化がキャラクター内部でどのように意味づけられたか**  
+を記述する構造である。
+
+---
+
+## 3. 主観表現は“計算結果のログ”である
+
+主観表現は創作的に「考える」ものではなく、  
+**既に出そろっているデータから計算される値**である。
+
+具体的には：
+
+
+
+\[
+SubjectiveExpression = g(ValueVector, FactLog, Emotion)
+\]
+
+
+
+主観表現は、  
+**計算式の途中式を外部化したもの**であり、  
+その難易度は前工程の設計値に依存する。
+
+---
+
+## 4. 主観表現の構造
+
+Subjective Expression は以下の要素で構成される：
+
+### 4.1 Internal State Before  
+イベント前の内部状態（Value Vector）。
+
+### 4.2 Internal State After  
+イベント後の内部状態（更新後の Value Vector）。
+
+### 4.3 Interpretation of External Change  
+Fact Log に記述された外界の変化が  
+内部でどのように意味づけられたか。
+
+### 4.4 Emotional Response  
+Emotion Dynamics によって計算された  
+EmotionStrength と EmotionPurity。
+
+### 4.5 Integrated Experience  
+上記の要素を統合した  
+「キャラクターが世界をどう経験したか」のログ。
+
+主観表現は、  
+**内部状態の変化を説明するための構造化データ**である。
+
+---
+
+## 5. 主観表現とイベントの関係
+
+OS 内では以下の関係が成立する：
+
+- **Fact Log = 外界の変化**  
+- **Subjective Expression = 内界の変化**  
+- **Event = その交点（Value Vector Update）**
+
+主観表現は、  
+**イベントの内界側の証拠**として機能する。
+
+---
+
+## 6. 主観表現の設計難易度
+
+主観表現の難易度は、  
+**前工程の設計値に強く依存する**。
+
+- ΔValueVector の大きさ  
+- EventIntensity の設定  
+- Fact Log の整合性  
+- Emotion Dynamics の出力  
+
+これらが複雑であればあるほど、  
+主観表現の設計も複雑になる。
+
+OS としては構造だけ提供し、  
+**どのように経験させるかは創作者の判断**に委ねる。
+
+---
+
+## 7. 本章が提供しないもの（Non-Scope）
+
+本章は Subjective Expression の **構造のみ** を扱う。  
+以下は対象外とする：
+
+- キャラクターの感情表現の作り方  
+- どのように主観を描写するか  
+- どのような語り口にするか  
+- どのように“経験”を演出するか  
+- どのような感情を持たせるか  
+- 創作者の価値観・判断基準  
+
+これらは創作者の内部モデルに依存するため、  
+OS の仕様書には含めない。
+
+
 
