@@ -1046,5 +1046,127 @@ OS としては構造だけ提供し、
 これらは創作者の内部モデルに依存するため、  
 OS の仕様書には含めない。
 
+# 07_world-consistency.md  
+Thesis-Narrative OS — World Consistency Specification
+
+## 1. World Consistency（世界整合性）の定義
+
+World Consistency とは、  
+**外界（Fact Log）と内界（Subjective Expression）が  
+同時に成立可能である世界モデルの整合条件**である。
+
+OS 内では、世界整合性は  
+Value Vector の更新（Event Update）が破綻なく成立するための  
+**必要条件**として扱われる。
+
+---
+
+## 2. World Consistency の役割
+
+World Consistency は OS 内で以下の役割を担う：
+
+- **Fact Log（外界の変化）が矛盾しないことを保証する**  
+- **Subjective Expression（内界の変化）が外界と整合することを保証する**  
+- **Event Update が成立可能である世界を定義する**  
+- **Narrative Trajectory（価値ベクトルの軌道）を支える舞台を構築する**
+
+世界整合性は「世界観」ではなく、  
+**更新が破綻しないための制約条件**である。
+
+---
+
+## 3. World Consistency の必要条件
+
+世界整合性を満たすためには、  
+以下の条件が必要となる：
+
+### 3.1 外界の整合性  
+- Fact Log の状態遷移が矛盾していない  
+- 世界のルールに反しない  
+- 物理・社会・文化的な因果が破綻していない  
+
+### 3.2 内界の整合性  
+- Subjective Expression が Fact Log と矛盾しない  
+- Emotion Dynamics の出力と Value Vector の更新が一致している  
+
+### 3.3 更新の整合性  
+- Event Update が外界と内界の両方から説明可能である  
+- ΔValueVector が Fact Log と Emotion によって正当化される  
+
+これらが満たされない場合、  
+OS 内では物語が「破綻」とみなされる。
+
+---
+
+## 4. 世界モデルと確率分布
+
+World Consistency は、  
+**世界モデルの確率分布に沿うほど説得力が増す**  
+という性質を持つ。
+
+これは OS 的には：
+
+- 世界モデルの確率分布に沿う → 更新が自然に見える  
+- 確率分布から外れる → 更新が不自然に見える  
+
+という構造を意味する。
+
+---
+
+## 5. World Building（世界観構築）との関係
+
+World Consistency は **必要条件**であり、  
+World Building は **自由条件**である。
+
+### 5.1 必要条件（OS が規定する）  
+- Fact Log と Subjective Expression が同時に成立すること  
+- Event Update が破綻しないこと  
+- 世界モデルの確率分布に反しないこと  
+
+### 5.2 自由条件（創作者が自由に拡張できる）  
+- 世界観の厚み  
+- 設定の深さ  
+- 文化・歴史・技術体系  
+- 物語を面白くするための追加要素  
+
+OS は必要条件のみを規定し、  
+自由条件は創作者に委ねる。
+
+---
+
+## 6. World Consistency の導入タイミング
+
+World Consistency は、  
+以下の構造が揃った後に初めて定義可能となる：
+
+- Value Vector  
+- Event Update  
+- Fact Log  
+- Subjective Expression  
+
+これらが揃って初めて、  
+**「外界と内界が同時に成立する世界」**  
+を設計できる。
+
+このため、  
+World Consistency は OS のこの段階で導入される。
+
+---
+
+## 7. 本章が提供しないもの（Non-Scope）
+
+本章は World Consistency の **必要条件のみ** を扱う。  
+以下は対象外とする：
+
+- 世界観の作り方  
+- 設定の厚みの出し方  
+- 物語を面白くするための演出  
+- 世界観の創作技法  
+- 創作者の価値観・判断基準  
+
+これらは創作者の内部モデルに依存するため、  
+OS の仕様書には含めない。
+
+
 
 
