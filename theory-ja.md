@@ -1,4 +1,5 @@
-# Thesis-Narrative OS — Theory Overview
+# 00_overview.md
+Thesis-Narrative OS — Theory Overview
 
 ## 0. Conceptual Lineage — Origin of Value Dimensions
 
