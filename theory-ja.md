@@ -1,5 +1,29 @@
 # Thesis-Narrative OS — Theory Overview
 
+## 0. Conceptual Lineage — Origin of Value Dimensions
+
+Thesis‑Narrative OS は、**VBPM-Core（Value-Based Personality Model）** に由来する  
+「価値基準（Value Dimensions）」の概念を継承している。
+
+VBPM-Core では、人格を  
+**価値基準 × 重み × 最適化**  
+で定義するために、行動や状況を評価する軸として  
+**Value Dimensions（価値基準／価値次元）** が導入された。
+
+この価値次元は、探索（exploration）や意思決定を成立させるために  
+必須の内部評価構造であり、外部化可能なベクトルとして扱われる。
+
+Thesis‑Narrative OS は、この価値次元の概念を  
+**キャラクターの内部状態（Value Vector）** として再構成し、  
+物語生成における価値観の揺れ・情動・主観表現・イベント更新の  
+中心構造として利用する。
+
+本 OS における「価値次元」は、  
+一般的な創作論の“価値観”とは異なり、  
+**計算可能・更新可能・外部化可能な内部評価軸**として定義される。
+
+---
+
 ## 1. Core Insight
 
 本 OS の発端は以下の内部計算から始まった：
