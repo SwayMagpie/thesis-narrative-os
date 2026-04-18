@@ -101,7 +101,7 @@ Emotion = f(\Delta ValueVector \times EventIntensity)
 - EmotionStrength = 情動の強さ  
 
 ### Emotion Purity（情動純度）  
-自分にとっての物語の「快」
+物語の「快」
 
 - 揺れの大きさ  
 - 揺れの方向の明確さ  
