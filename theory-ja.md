@@ -645,3 +645,141 @@ OS が規定するのは **更新点** であり、
 これらは創作者の内部モデルに依存するため、  
 OS の仕様書には含めない。
 
+
+# 04_emotion-dynamics.md  
+Thesis-Narrative OS — Emotion Dynamics Specification
+
+## 1. Emotion Dynamics の定義
+
+Emotion Dynamics とは、  
+**Value Vector の変化量（ΔValueVector）と EventIntensity に基づいて  
+情動の強度と純度を計算する OS 内部の構造**である。
+
+情動は OS 内では「内部状態の変化として観測される量」であり、  
+外部刺激そのものではなく、  
+**Value Vector の更新結果として定義される。**
+
+---
+
+## 2. Emotion Dynamics の基本式
+
+Emotion Dynamics は以下の式で定義される：
+
+
+
+\[
+Emotion = f(\Delta ValueVector \times EventIntensity)
+\]
+
+
+
+ここで：
+
+- **ΔValueVector**  
+  価値ベクトルの変化量（揺れ）
+
+- **EventIntensity**  
+  イベントの強度（Fact Log による外部変化の大きさ）
+
+- **EmotionStrength**  
+  情動の強さ（出力）
+
+Emotion は、  
+**内部状態の変化 × 外部変化の強度**  
+として計算される。
+
+---
+
+## 3. Emotion Purity（情動純度）
+
+Emotion Purity は、  
+**Value Vector の揺れの大きさとして観測される量**である。
+
+OS 内では以下のように定義される：
+
+
+
+\[
+Purity = |\Delta ValueVector|
+\]
+
+
+
+Emotion Purity は次の要素を含む：
+
+- **揺れの大きさ**  
+  どれだけ価値ベクトルが変化したか
+
+- **揺れの方向の明確さ**  
+  更新方向がどれだけ一貫しているか
+
+- **内部発生性**  
+  更新が内部状態の変化として説明可能であること
+
+Emotion Purity は、  
+**物語内部での「快」や「意味の強度」** を測定するための  
+構造的な指標として扱われる。
+
+---
+
+## 4. ΔValueVector の設計とイベント強度
+
+Emotion Dynamics を成立させるためには、  
+**どの Value Dimension にどれだけの Δ（揺れ）を発生させるか**  
+を決定する必要がある。
+
+これは OS の外側にある創作者の判断に依存するが、  
+OS としては以下の構造を提供する：
+
+### 4.1 ΔValueVector の構造的要件  
+- どの次元に変化が発生したか  
+- 変化量がどれだけか  
+- 変化方向がテーゼと比較可能であること  
+- 更新が Fact Log と整合していること  
+
+### 4.2 EventIntensity の構造的要件  
+- 外部変化の大きさを表すスカラー値  
+- ΔValueVector と組み合わせて EmotionStrength を決定する  
+- Fact Log によって説明可能であること  
+
+Emotion Dynamics は、  
+**内部変化（ΔValueVector）と外部変化（EventIntensity）の  
+両方が揃ったときに成立する構造**である。
+
+---
+
+## 5. Emotion Dynamics の役割
+
+Emotion Dynamics は OS 内で以下の役割を担う：
+
+- **Narrative Trajectory の強度を決定する**  
+  揺れの大きさが物語の推進力になる。
+
+- **Subjective Expression の基礎データとなる**  
+  主観表現は EmotionStrength と Purity をもとに生成される。
+
+- **Fact Log の設計難易度に影響する**  
+  ΔValueVector の大きさに応じて、  
+  必要な外部変化（Fact Log）の設計が変わる。
+
+Emotion Dynamics は、  
+**物語の内部計算を支える中心的なエンジン**である。
+
+---
+
+## 6. 本章が提供しないもの（Non-Scope）
+
+本章は Emotion Dynamics の **構造のみ** を扱う。  
+以下は対象外とする：
+
+- 情動をどう「感じさせる」か  
+- どのような情動を「演出」するか  
+- ΔValueVector をどう「決める」か  
+- EventIntensity をどう「設定する」か  
+- 物語の快をどう「作る」か  
+- 創作者の価値観・感性・判断基準  
+
+これらは創作者の内部モデルに依存するため、  
+OS の仕様書には含めない。
+
+
