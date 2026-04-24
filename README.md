@@ -25,7 +25,7 @@ but an **operating system for narrative generation**.
 
 ---
 
-# Overview
+## Overview
 
 thesis-narrative-os reframes narrative generation not as “creative writing,”  
 but as an **OS‑like process that renders logs of value‑state transitions**.
