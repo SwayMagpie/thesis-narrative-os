@@ -7,3 +7,6 @@ The OS defines narrative as the optimization of a central thesis (value function
 The system integrates external fact logs, internal subjective expressions, and emotional transitions into a unified world model. Narrative rendering bundles these components into natural‑language output, enabling a simulation‑capable narrative engine. Numerical extensions allow full quantification of value vectors, event magnitudes, emotional purity, and subjective depth.
 
 Thesis‑Narrative OS provides a structural, computable framework for narrative generation, designed for creators who operate with value systems, state transitions, and internal models rather than templates or plot formulas.
+
+Related identifier: 10.5281/zenodo.19732788
+Relation: Is based on / References
