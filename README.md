@@ -1,9 +1,20 @@
 # thesis-narrative-os  
 
-https://doi.org/10.5281/zenodo.19734228
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19734228.svg)](https://doi.org/10.5281/zenodo.19734228
 
 A thesis‑driven narrative generation OS.
 
+---
+
+## 🔍 Abstract
+A full abstract is available here:  
+👉 **[Abstract.md](./Abstract.md)**
+
+---
+
+
+
+## 🧠 Core Pipeline
 This framework treats narrative as **state transitions of value systems**,  
 and generates natural‑language stories through a consistent computational pipeline:
 
