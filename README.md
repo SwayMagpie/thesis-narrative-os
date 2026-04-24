@@ -1,4 +1,7 @@
 # thesis-narrative-os  
+
+https://doi.org/10.5281/zenodo.19734228
+
 A thesis‑driven narrative generation OS.
 
 This framework treats narrative as **state transitions of value systems**,  
